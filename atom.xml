@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bigbai-ing.github.io/"/>
-  <updated>2019-02-25T01:54:34.165Z</updated>
+  <updated>2019-02-25T03:27:57.246Z</updated>
   <id>https://bigbai-ing.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>此blog搭建流程</title>
+    <link href="https://bigbai-ing.github.io/2019/02/25/%E6%AD%A4blog%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/"/>
+    <id>https://bigbai-ing.github.io/2019/02/25/此blog搭建流程/</id>
+    <published>2019-02-25T03:00:42.000Z</published>
+    <updated>2019-02-25T03:27:57.246Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="linux上面安装node-js"><a href="#linux上面安装node-js" class="headerlink" title="linux上面安装node.js"></a>linux上面安装node.js</h1><pre><code>参考：https://linux.cn/article-5766-1.html</code></pre><ul><li>1 安装必要的包：<br>  apt-get install python gcc make g++   （centos 是：yum install python gcc+ gcc-c++)</li><li>2 下载node.js包：<br>wget <a href="https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz" target="_blank" rel="noopener">https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz</a><br>tar zxvf node-v8.12.0.tar.gz</li><li>3 编译安装<br>进入源代码的目录，然后运行.configure文件<br>cd node-v8.12.0<br>./configure<br>然后执行make install</li><li>4 测试是否安装完成<br>node -v</li></ul><h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><ul><li>创建目录<br>mkdir hexo</li><li>切换目录<br>cd hexo</li><li>安装Git(已安装可跳过)<br>yum install git-core</li><li>安装 Hexo<br>npm install -g hexo-cli</li><li>初始化 Hexo<br>hexo init<h5 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h5>npm install hexo-generator-index –save<br>npm install hexo-generator-archive –save<br>npm install hexo-generator-category –save<br>npm install hexo-generator-tag –save<br>npm install hexo-server –save<br>npm install hexo-deployer-git –save<br>npm install hexo-deployer-heroku –save<br>npm install hexo-deployer-rsync –save<br>npm install hexo-deployer-openshift –save<br>npm install hexo-renderer-marked –save<br>npm install hexo-renderer-stylus –save<br>npm install hexo-generator-feed –save<br>npm install hexo-generator-sitemap –save<br>npm install –save hexo-helper-live2d</li></ul><h1 id="修改hexo配置："><a href="#修改hexo配置：" class="headerlink" title="修改hexo配置："></a>修改hexo配置：</h1><p>修改 hexo目录下_config.yml 文件：</p><pre><code># Sitetitle: Hexosubtitle: 宁静致远description:keywords:author: phlanguage: zh-Hanstimezone: Asia/ShangHai# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:  type: git  repo: https://github.com/bigbai-ing/bigbai-ing.github.io.git  branch: master</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;linux上面安装node-js&quot;&gt;&lt;a href=&quot;#linux上面安装node-js&quot; class=&quot;headerlink&quot; title=&quot;linux上面安装node.js&quot;&gt;&lt;/a&gt;linux上面安装node.js&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;参考：htt
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

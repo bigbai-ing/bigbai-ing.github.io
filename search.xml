@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[此blog搭建流程]]></title>
+    <url>%2F2019%2F02%2F25%2F%E6%AD%A4blog%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[linux上面安装node.js参考：https://linux.cn/article-5766-1.html 1 安装必要的包： apt-get install python gcc make g++ （centos 是：yum install python gcc+ gcc-c++) 2 下载node.js包：wget https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gztar zxvf node-v8.12.0.tar.gz 3 编译安装进入源代码的目录，然后运行.configure文件cd node-v8.12.0./configure然后执行make install 4 测试是否安装完成node -v 安装hexo 创建目录mkdir hexo 切换目录cd hexo 安装Git(已安装可跳过)yum install git-core 安装 Hexonpm install -g hexo-cli 初始化 Hexohexo init安装插件npm install hexo-generator-index –savenpm install hexo-generator-archive –savenpm install hexo-generator-category –savenpm install hexo-generator-tag –savenpm install hexo-server –savenpm install hexo-deployer-git –savenpm install hexo-deployer-heroku –savenpm install hexo-deployer-rsync –savenpm install hexo-deployer-openshift –savenpm install hexo-renderer-marked –savenpm install hexo-renderer-stylus –savenpm install hexo-generator-feed –savenpm install hexo-generator-sitemap –savenpm install –save hexo-helper-live2d 修改hexo配置：修改 hexo目录下_config.yml 文件： # Site title: Hexo subtitle: 宁静致远 description: keywords: author: ph language: zh-Hans timezone: Asia/ShangHai # Deployment ## Docs: https://hexo.io/docs/deployment.html deploy: type: git repo: https://github.com/bigbai-ing/bigbai-ing.github.io.git branch: master]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F02%2F25%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
